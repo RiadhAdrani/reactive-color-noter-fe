@@ -1,5 +1,5 @@
 body {
-    margin: 0;
+    margin: 8px;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
         "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -8,6 +8,35 @@ body {
 
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.Content {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 900px) {
+    .Content {
+        width: 70%;
+    }
+}
+
+@media (max-width: 700px) {
+    .Content {
+        width: 85%;
+    }
+}
+
+@media (max-width: 550px) {
+    .Content {
+        width: 95%;
+    }
+}
+
+.Navbar {
+    position: sticky;
+    top: 8px;
 }
 
 .Home-wrapper {
@@ -22,8 +51,9 @@ a {
     text-decoration: none;
 }
 
-.App {
-    min-height: 100vh;
+.Row {
+    display: flex;
+    flex-direction: row;
 }
 
 .Column {

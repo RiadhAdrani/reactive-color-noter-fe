@@ -13,5 +13,5 @@ export default () => {
         content = <CardGrid />;
     }
 
-    return <div className="Home-wrapper"> {content}</div>;
+    return <div> {content}</div>;
 };

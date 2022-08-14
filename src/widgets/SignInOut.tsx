@@ -20,8 +20,8 @@ export default () => {
 
         if (isLogin) {
             const res = await authUser(email);
-            if (typeof res == "string") {
-                setAlert(res);
+            if (!res) {
+                setAlert("Cannot find user.");
             } else {
                 dispatch(set(res));
                 setAlert("");
